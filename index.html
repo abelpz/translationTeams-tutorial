@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>translationTeams 0.0.1</title>
+    </head>
+
+    <body>
+        <h1>Aplicación para la administración de equipos de traducción</h1>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre-usuario" id="nombre" placeholder="Ej. Elías Piñero"/>
+            <button id="add">Añadir</button>
+        </form>
+        <ul id="lista-nombres">
+        </ul>
+
+        <script>
+            let nameInput = document.getElementById("nombre");
+            let addButton = document.getElementById("add");
+            let namesList = document.getElementById("lista-nombres");
+
+            addButton.addEventListener("click", (event) => { //Escucha el evento click y ejecuta una o varias acciones
+                event.preventDefault(); //Previene el comportamiento usual de este evento
+
+                if(nameInput.value != ""){
+                    let listItem = document.createElement("li");
+
+                    listItem.innerText = nameInput.value;
+
+                    namesList.appendChild(listItem);
+
+                    nameInput.value = "";
+                }
+                
+            });
+        </script>
+    </body>
+</html>
