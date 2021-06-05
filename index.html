@@ -8,12 +8,22 @@
     <body>
         <h1>Aplicación para la administración de equipos de traducción</h1>
         <form>
-            <label for="nombre">Nombre:</label>
+            <label for="nombre">Equipos:</label>
+            <select name="equipos" id="equipos">
+                <option value="equipo1">equipo1</option>
+            </select>
+
+            <label for="nombre-equipo">Nombre de equipo:</label>
+            <input type="text" name="nombre-equipo" id="nombre-equipo" placeholder="Ej. Equipo 1"/>
+            <button id="add-team">Crear equipo</button>
+
+            <label for="nombre">Miembros del equipo:</label>
             <input type="text" name="nombre-usuario" id="nombre" placeholder="Ej. Elías Piñero"/>
-            <button id="add">Añadir</button>
+            <button id="add">Añadir miembro</button>
         </form>
-        <ul id="lista-nombres">
-        </ul>
+        
+        <div id="lista-equipos">
+        </div>
 
         <script src="/app.js"></script>
     </body>
