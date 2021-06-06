@@ -7,9 +7,6 @@ let teamsList = document.getElementById("lista-equipos");
 
 let equipos = []
 
-    equipos["equipo1"] = ["Abel", "Elias", "Miguel", "Larry"]
-    equipos["equipo2"] = ["Angela", "Karina", "Paola"]
-
 function addTeamOption(teamName){
 
     let option = document.createElement("option");
