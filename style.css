@@ -1,4 +1,113 @@
-body{
-    background-color:navy;
-    color: lightgray
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 50px 50px;
+    background: rgb(240, 240, 240)
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 50px;
+    border-bottom: 1px dashed;
+    padding-bottom: 30px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -5px #000;
+}
+
+.form-group button {
+    background-color: rgb(45, 45, 77);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: rgb(63, 63, 97);
+}
+
+.form-group button:active {
+    transform: translateY(5px);
+    background-color: #000;
+}
+
+.form-group input, .form-group select {
+    padding: 10px;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.form-group label {
+    font-weight: 500;
+}
+
+.form-group *{
+    margin-bottom: 10px;
+}
+
+#lista-equipos {
+    margin-top: 50px;
+    border-top: 1px dashed rgb(74, 74, 82);
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+#lista-equipos .equipo {
+    background:rgb(45, 45, 77);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#lista-equipos .equipo h3 {
+    color:rgb(137, 231, 184);
+}
+
+#lista-equipos .equipo ol  {
+    padding-left: 20px;
+}
+
+#lista-equipos .equipo ol li {
+    background-color: rgb(63, 63, 97);
+    margin-bottom: 5px;
+    padding: 7px;
+}
+
+#lista-equipos .equipo ol li:nth-child(2n-1) {
+    color: rgb(255, 255, 202);
+    background-color:rgb(49, 49, 82)
+}
+
+@media (max-width: 900px) {
+
+    form{
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    form{
+        grid-template-columns: auto;
+    }
+
 }
