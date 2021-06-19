@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+</head>
+<body>
+    <form id="crear-plato" action="">
+        <input type="text" name="nombre" id="nombre-plato" placeholder="Introduce un nombre">
+        <input type="text" name="descripcion" id="descripcion-plato" placeholder="Introduce una descripcion">
+        <input type="text" name="precio" id="precio-plato" placeholder="Introduce el precio">
+        <select name="categorias" id="categorias-plato" placeholder="Selecciona la categoria">
+
+        </select>
+        <button id="añadir-plato">Añadir Plato</button>
+    </form>
+
+    <form id="crear-categoria" action="">
+        <input type="text" name="nombre" id="nombre-categoria" placeholder="Introduce un nombre">
+        <input type="text" name="descripcion" id="descripcion-categoria" placeholder="Introduce una descripcion">
+        <button id="añadir-categoria">Añadir Categoría</button>
+    </form>
+
+    <div id="menu">
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>
